@@ -4,7 +4,7 @@ import { precacheAndRoute } from 'workbox-precaching';
 import { CacheableResponsePlugin } from 'workbox-cacheable-response';
 
 // Import the expiration plugin
-import { ExpiratinoPlugin, ExpirationPlugin } from 'workbox-expiration';
+import { ExpirationPlugin } from 'workbox-expiration';
 
 precacheAndRoute(self.__WB_MANIFEST);
 
