@@ -102,3 +102,11 @@ window.editCard = (e) => {
     // Toggles the Submit button so that it now Updates an existing contact instead of posting a new one
     submitBtnToUpdate = true;
 };
+
+// Register a Service Worker
+if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js');
+    })
+};
