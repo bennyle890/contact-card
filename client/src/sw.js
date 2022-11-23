@@ -24,9 +24,9 @@ registerRoute(
     new StaleWhileRevalidate({
         cacheName,
         plugins: [
-    new CacheableResponsePlugin({
-        statuses: [0, 200],
-          }),
+            new CacheableResponsePlugin({
+                statuses: [0, 200],
+            }),
         ],
     })
 );
